@@ -1,0 +1,28 @@
+width=600
+height=400
+prompt=
+location=center
+orientation=vertical
+halign=fill
+content_halign=fill
+
+# Поведение
+show=drun
+allow_images=true
+allow_markup=true
+insensitive=true
+matching=fuzzy
+parse_search=true
+no_actions=false
+sort_order=default
+exec_search=false
+hide_scroll=true
+
+# Скорость обновления фильтра (мс)
+filter_rate=100
+
+# Размер иконок
+image_size=24
+
+# Разделитель колонок
+columns=1

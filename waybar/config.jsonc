@@ -1,0 +1,63 @@
+{
+    "layer": "top",
+    "position": "top",
+
+    "height": 28,
+    "spacing": 0,
+
+    "modules-left": [
+        "ext/workspaces"
+    ],
+
+    "modules-center": [],
+
+    "modules-right": [
+        "tray",
+        "cpu",
+        "memory",
+        "temperature",
+        "wireplumber",
+        "battery",
+        "clock"
+    ],
+
+    "ext/workspaces": {
+        "format": "[{name}]",
+        "all-outputs": true
+    },
+
+    "tray": {
+        "icon-size": 14,
+        "spacing": 6
+    },
+
+    "cpu": {
+        "interval": 2,
+        "format": "[CPU {usage}%]"
+    },
+
+    "memory": {
+        "interval": 2,
+        "format": "[RAM {}%]"
+    },
+
+    "temperature": {
+        "critical-threshold": 85,
+        "format": "[TMP {temperatureC}°]"
+    },
+
+    "wireplumber": {
+        "format": "[VOL {volume}%]",
+        "format-muted": "[VOL mute]",
+        "scroll-step": 5
+    },
+
+    "battery": {
+        "format": "[BAT {capacity}%]",
+        "format-charging": "[CHR {capacity}%]"
+    },
+
+    "clock": {
+        "format": "[{:%H:%M}]"
+    }
+}

@@ -1,0 +1,86 @@
+@define-color bg #1e1e2e;
+@define-color fg #cdd6f4;
+
+@define-color blue #89b4fa;
+@define-color green #a6e3a1;
+@define-color yellow #f9e2af;
+@define-color mauve #cba6f7;
+@define-color peach #fab387;
+@define-color red #f38ba8;
+
+*{
+    font-family: JetBrainsMono Nerd Font;
+    font-size:15px;
+    font-weight:700;
+
+    border:none;
+    border-radius:0;
+    min-height:0;
+}
+
+window#waybar{
+
+    background:@bg;
+    color:@fg;
+
+    border-bottom:2px solid #313244;
+}
+
+#workspaces{
+    margin-left:8px;
+}
+
+#workspaces button{
+
+    color:#6c7086;
+
+    padding:0 2px;
+
+    background:transparent;
+}
+
+#workspaces button.active{
+    color:@mauve;
+}
+
+#workspaces button:hover{
+    background:transparent;
+    box-shadow:none;
+    color:@blue;
+}
+
+#tray,
+#cpu,
+#memory,
+#temperature,
+#wireplumber,
+#battery,
+#clock{
+
+    padding:0 3px;
+}
+
+#cpu{
+    color:@blue;
+}
+
+#memory{
+    color:@green;
+}
+
+#temperature{
+    color:@yellow;
+}
+
+#wireplumber{
+    color:@mauve;
+}
+
+#battery{
+    color:@peach;
+}
+
+#clock{
+    color:@red;
+    margin-right:8px;
+}
